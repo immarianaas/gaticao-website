@@ -1,0 +1,13 @@
+{
+  "animais" : [
+    {
+      "id": 1, "race" : "GATO", "imagePath" : "/assets/animal-images/ex1.jpg"
+    },
+    {
+      "id": 2, "race" : "GATO", "imagePath" : "/assets/animal-images/ex2.jpg"
+    },
+    {
+      "id": 4, "race" : "GATO", "imagePath" : "/assets/animal-images/ex3.jpg"
+    }
+  ]
+}
