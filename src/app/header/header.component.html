@@ -14,20 +14,19 @@
   </div>
 
   <!-- menu -->
-  <div class="navbar-menu" #navMenu (click)="toggleNavbar()">
+  <div class="navbar-menu" #navMenu (click)="toggleNavbar(); $event.stopPropagation()">
     <div class="navbar-end">
       <a class="navbar-item is-bold">Missão</a>
       <a class="navbar-item is-bold">Como Ajudar</a>
       <a class="navbar-item is-bold">Adotar</a>
       <a class="navbar-item is-bold">Parceiros</a>
       <a class="navbar-item is-bold">Contactos</a>
-      <a class="navbar-item is-bold" (click)="toggleLoginForm()">Entrar</a>
+      <a *ngIf="!isLoggedIn()" class="navbar-item is-bold" (click)="toggleLoginForm()">Entrar</a>
+      <a *ngIf="isLoggedIn()" class="navbar-item is-bold" (click)="logout()">Sair</a>
       <!--<a class="navbar-item" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a>
       <a class="navbar-item" [routerLink]="['/users']" routerLinkActive="router-link-active" >Users</a>-->
     </div>
   </div>
 </nav>
 
-<div *ngIf="isLoginFormVisible()">
 <app-login></app-login>
-</div>

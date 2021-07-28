@@ -1,19 +1,9 @@
-<!--
-<ul>
-  <li *ngFor="let a of animals">
-    <img [src]="a.imagePath" />
-    <span>{{a.imagePath}}</span>
-  </li>
-</ul>
--->
-
 <div class="container">
 
   <h2>Animais</h2>
 
-  <!--<div class="row">-->
-<!--    <div class="col-lg-10 col-md-12 col-sm-12">-->
-<!--      <div class="cards-wrapper">-->
+  <app-add-animal></app-add-animal>
+
   <div class="cards-wrapper">
 
         <div *ngFor="let a of animals">
@@ -24,6 +14,9 @@
                 <img class="imgg" [src]="a.imagePath" alt="Placeholder image" style="object-fit: cover;">
               </figure>
             </div>
+          </div>
+          <div style="text-align: center; padding: 0.5rem;">
+            <input type="button" (click)="delete();" class="button is-small is-danger" value="eliminar" >
           </div>
          </div>
 

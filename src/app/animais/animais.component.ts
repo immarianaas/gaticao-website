@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal, Size, Race } from "../animal";
 import { AnimaisService } from "../animais.service";
+import {LoginService} from "../login.service";
 
 @Component({
   selector: 'app-animais',
@@ -12,7 +13,8 @@ export class AnimaisComponent implements OnInit {
   animals: Animal[];
 
   constructor(
-    private animaisService: AnimaisService
+    private animaisService: AnimaisService,
+    private loginService: LoginService
   ) {
     /* this.animals = [
       { race: Race.GATO, imagePath: '/assets/animal-images/ex1.jpg' },
@@ -23,6 +25,14 @@ export class AnimaisComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  loggedIn(): boolean {
+    return this.loginService.isLoggedIn;
+  }
+
+  delete(): void {
+    // yet todo
   }
 
 }

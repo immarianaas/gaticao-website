@@ -21,13 +21,15 @@ export class HeaderComponent {
     this.navMenu.nativeElement.classList.toggle('is-active');
   }
 
+  isLoggedIn(): boolean {
+    return this.loginService.isLoggedIn;
+  }
 
   toggleLoginForm(): void {
     this.loginService.toggleLoginForm();
   }
 
-  isLoginFormVisible(): boolean {
-    return this.loginService.showLoginForm;
+  logout(): void {
+    this.loginService.logout();
   }
-
 }

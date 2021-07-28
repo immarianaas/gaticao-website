@@ -1,0 +1,33 @@
+<section>
+
+
+  <div>
+
+    <form class="box">
+      <div class="field">
+        <label class="label">Image</label>
+        <div class="control">
+          <input class="input" name="image" [(ngModel)]="imageUrl" type="url" placeholder="e.g. https://1.bp.blogspot.com/-qQrnv5RDuGI/V0MrrmqTIRI/AAAAAAAAHVw/DCJQVqHsgEIRLLLeRVxlssP-EyouV8qwQCLcB/s1600/porto_portugal_2.jpg" >
+        </div>
+      </div>
+
+      <div>
+        <img [src]="imageUrl">
+      </div>
+
+      <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+          <input class="input" name="password" type="password" placeholder="********">
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <input type="button" class="col-5 button is-primary" style="margin-right: 0.5rem;" value="Sign in"/>
+        <input type="button" class="col-5 button is-light" style="margin-left: 0.5rem;" value="Cancel"/>
+      </div>
+    </form>
+
+  </div>
+
+</section>

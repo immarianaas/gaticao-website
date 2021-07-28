@@ -1,7 +1,7 @@
 {
   "animais" : [
     {
-      "id": 1, "race" : "GATO", "imagePath" : "/assets/animal-images/ex1.jpg"
+      "id": 1, "race" : "GATO", "imagePath" : "https://raw.githubusercontent.com/immarianaas/gaticao-website/main/src/assets/animal-images/ex1.jpg"
     },
     {
       "id": 2, "race" : "GATO", "imagePath" : "/assets/animal-images/ex2.jpg"

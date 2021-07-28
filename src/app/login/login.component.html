@@ -1,26 +1,30 @@
-<section>
+<section (click)="$event.stopPropagation()">
 
 
-  <div class="login">
+  <div class="login" *ngIf="show()" >
 
     <form class="box">
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
-          <input class="input" type="email" placeholder="e.g. alex@example.com" >
-          <input type="text" name="iub" value =" {{emailaa}}" >
+          <input class="input" name="email" [(ngModel)]="email" type="email" placeholder="e.g. alex@example.com" >
         </div>
       </div>
 
       <div class="field">
         <label class="label">Password</label>
         <div class="control">
-          <input class="input" type="password" placeholder="********">
+          <input class="input" name="password" [(ngModel)]="password" type="password" placeholder="********">
         </div>
       </div>
 
+
+      <div *ngIf="loginError" style="text-align: center; height:2rem;">
+        <p style="color:red;">Credenciais inválidas.</p>
+      </div>
+
       <div style="text-align: center;">
-        <input type="button" class="col-5 button is-primary" style="margin-right: 0.5rem;" value="Sign in"/>
+        <input type="button" (click)="login()" class="col-5 button is-primary" style="margin-right: 0.5rem;" value="Sign in"/>
         <input type="button" (click)="cancel()" class="col-5 button is-light" style="margin-left: 0.5rem;" value="Cancel"/>
       </div>
     </form>
