@@ -1,10 +1,31 @@
 
-.example-card {
-  max-width: 250px;
-  max-height: 250px;
+.animal-img {
+  background-size: cover;
 }
 
-.example-card img {
-  object-fit: cover;
-  max-height: 250px;
+/*
+.cards-wrapper {
+  display: grid;
+
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+  box-sizing: border-box;
+}
+
+ */
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+object-position: center;
+  grid-gap: 4rem;
+
 }

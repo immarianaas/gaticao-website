@@ -8,6 +8,9 @@
     },
     {
       "id": 4, "race" : "GATO", "imagePath" : "/assets/animal-images/ex3.jpg"
+    },
+    {
+      "id": 5, "race" : "GATO", "imagePath" : "/assets/animal-images/ex4.jpg"
     }
   ]
 }
