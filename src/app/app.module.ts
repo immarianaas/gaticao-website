@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     AnimaisComponent,
     HeaderComponent,
     FooterComponent,
+    LoginComponent,
     
   ],
   imports: [

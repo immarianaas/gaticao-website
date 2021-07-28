@@ -29,3 +29,12 @@ object-position: center;
   grid-gap: 4rem;
 
 }
+
+.imgg:hover {
+  /*
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+   */
+box-shadow: 0 0 10px;
+}
