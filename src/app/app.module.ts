@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AnimaisComponent } from './animais/animais.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatCardModule } from "@angular/material/card";
-import {MatGridListModule} from "@angular/material/grid-list";
+// import { MatCardModule } from "@angular/material/card";
+// import {MatGridListModule} from "@angular/material/grid-list";
 import { HeaderComponent } from './header/header.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
@@ -23,15 +25,18 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    
+
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     CarouselModule.forRoot(),
-    MatCardModule,
-    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    // MatCardModule,
+    // MatGridListModule,
     AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
