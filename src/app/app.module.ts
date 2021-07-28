@@ -8,6 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
+import { HeaderComponent } from './header/header.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 
 @NgModule({
@@ -15,14 +19,17 @@ import {MatGridListModule} from "@angular/material/grid-list";
     AppComponent,
     HomeComponent,
     AnimaisComponent,
-
+    HeaderComponent,
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-
+    CarouselModule.forRoot(),
     MatCardModule,
     MatGridListModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
