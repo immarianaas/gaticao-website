@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { NgModel } from "@angular/forms";
 
 
 @Component({
@@ -15,14 +14,23 @@ export class LoginComponent implements OnInit {
   public emailaa: string;
   password?: string;
 
-  constructor() { this.emailaa = "gds";
+  constructor(
+
+  ) { this.emailaa = "gds";
   }
 
   ngOnInit(): void {
   }
 
-  cancel(): void {
+  @HostListener('document:click', ['$event'])
+  clickout() {
 
+  }
+
+
+
+  cancel(): void {
+    console.log(this.emailaa);
   }
 
 }

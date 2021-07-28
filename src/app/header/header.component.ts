@@ -1,4 +1,5 @@
 import { Component,  ViewChild, ElementRef } from '@angular/core';
+import { LoginService } from "../login.service";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,10 @@ import { Component,  ViewChild, ElementRef } from '@angular/core';
 })
 export class HeaderComponent {
 
-  public showLoginForm: boolean = false
 
-  constructor() { }
+  constructor(
+    private loginService: LoginService
+  ) { }
 
   @ViewChild('navBurger', { static: true }) navBurger!: ElementRef;
   @ViewChild('navMenu', { static: true }) navMenu!: ElementRef;
@@ -19,8 +21,13 @@ export class HeaderComponent {
     this.navMenu.nativeElement.classList.toggle('is-active');
   }
 
+
   toggleLoginForm(): void {
-    this.showLoginForm = !this.showLoginForm;
+    this.loginService.toggleLoginForm();
+  }
+
+  isLoginFormVisible(): boolean {
+    return this.loginService.showLoginForm;
   }
 
 }

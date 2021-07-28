@@ -4,6 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LoginService {
+  public showLoginForm: boolean = false
+
+  toggleLoginForm(): void {
+    this.showLoginForm = !this.showLoginForm;
+  }
 
   constructor() { }
 }
