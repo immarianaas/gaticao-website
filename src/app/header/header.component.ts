@@ -7,6 +7,8 @@ import { Component,  ViewChild, ElementRef } from '@angular/core';
 })
 export class HeaderComponent {
 
+  public showLoginForm: boolean = false
+
   constructor() { }
 
   @ViewChild('navBurger', { static: true }) navBurger!: ElementRef;
@@ -15,6 +17,10 @@ export class HeaderComponent {
   toggleNavbar() {
     this.navBurger.nativeElement.classList.toggle('is-active');
     this.navMenu.nativeElement.classList.toggle('is-active');
+  }
+
+  toggleLoginForm(): void {
+    this.showLoginForm = !this.showLoginForm;
   }
 
 }

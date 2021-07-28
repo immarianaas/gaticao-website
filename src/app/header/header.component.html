@@ -1,27 +1,33 @@
 <!-- header -->
 <nav class="navbar has-shadow is-light">
-    <div class="navbar-brand">
-     <a class="navbar-item">
-        <img src="assets/header-img/gaticaoLogo.png" alt="logo_site" style="max-height: 80px">
-     </a>
-    
-     <a (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-     </a> 
-     </div>
-    
-     <!-- menu -->
-     <div class="navbar-menu" #navMenu (click)="toggleNavbar()">
-        <div class="navbar-end">
-            <a class="navbar-item is-bold">Missão</a>
-            <a class="navbar-item is-bold">Como Ajudar</a>
-            <a class="navbar-item is-bold">Adotar</a>
-            <a class="navbar-item is-bold">Parceiros</a>
-            <a class="navbar-item is-bold">Contactos</a>
-            <!--<a class="navbar-item" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a>
-            <a class="navbar-item" [routerLink]="['/users']" routerLinkActive="router-link-active" >Users</a>-->
-        </div>
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="assets/header-img/gaticaoLogo.png" alt="logo_site" style="max-height: 80px">
+    </a>
+
+    <a (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger" aria-label="menu"
+       aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!-- menu -->
+  <div class="navbar-menu" #navMenu (click)="toggleNavbar()">
+    <div class="navbar-end">
+      <a class="navbar-item is-bold">Missão</a>
+      <a class="navbar-item is-bold">Como Ajudar</a>
+      <a class="navbar-item is-bold">Adotar</a>
+      <a class="navbar-item is-bold">Parceiros</a>
+      <a class="navbar-item is-bold">Contactos</a>
+      <a class="navbar-item is-bold" (click)="toggleLoginForm()">Entrar</a>
+      <!--<a class="navbar-item" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a>
+      <a class="navbar-item" [routerLink]="['/users']" routerLinkActive="router-link-active" >Users</a>-->
     </div>
+  </div>
 </nav>
+
+<div *ngIf="showLoginForm">
+<app-login></app-login>
+</div>
