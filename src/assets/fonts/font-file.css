@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "cattie";
+    src: url("./Cattie-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "katto";
+    src: url("./katto-personal-use.outline.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "puppy";
+    src: url("./KsPuppyPartyRegular-11n0.ttf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "roasting";
+    src: url("./Roasting-ZVZdq.otf") format("opentype");
+}

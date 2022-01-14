@@ -20,3 +20,9 @@
   .roasting{
     font-family: 'roasting';
   }
+
+  .section {
+    margin-bottom: -18em;
+  }
+
+  li:before { content: '\1F408'; margin-left: 0px; margin-right: 10px; } 

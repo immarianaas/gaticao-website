@@ -12,6 +12,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { AddAnimalComponent } from './add-animal/add-animal.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { MissaoComponent } from './missao/missao.component';
+import { ComoAjudarComponent } from './como-ajudar/como-ajudar.component';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import { AddAnimalComponent } from './add-animal/add-animal.component';
     FooterComponent,
     LoginComponent,
     AddAnimalComponent,
+    QuemSomosComponent,
+    MissaoComponent,
+    ComoAjudarComponent,
   ],
 
   providers: [],
