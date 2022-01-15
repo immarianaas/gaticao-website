@@ -16,6 +16,8 @@ import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { MissaoComponent } from './missao/missao.component';
 import { ComoAjudarComponent } from './como-ajudar/como-ajudar.component';
 
+//import { FacebookModule } from 'ngx-facebook';
+
 
 @NgModule({
   imports: [
@@ -24,6 +26,7 @@ import { ComoAjudarComponent } from './como-ajudar/como-ajudar.component';
     ReactiveFormsModule,
     CarouselModule.forRoot(),
     AppRoutingModule,
+    //FacebookModule.forRoot()
 
   ],
   declarations: [

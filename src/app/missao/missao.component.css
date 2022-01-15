@@ -20,3 +20,12 @@
   .roasting{
     font-family: 'roasting';
   }
+
+  .section {
+    margin:0;
+    padding:0;
+  }
+
+  .sh {
+    filter: drop-shadow(20px 10px 10px rgb(67, 12, 75));
+  }

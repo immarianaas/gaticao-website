@@ -4,23 +4,27 @@
     margin-bottom: 1em;
   }
 
-  .cattie{
-    font-family: 'cattie';
-  }
-
-
-  .katto{
-    font-family: 'katto';
-  }
-
-  .puppy{
-    font-family: 'puppy';
-  }
-
   .roasting{
     font-family: 'roasting';
   }
 
   .section {
-    margin-bottom: -18em;
+    margin-bottom: -250px;
+    margin:0;
+    padding:0;
+  }
+
+
+  ::ng-deep * {
+      
+    margin: 0;
+    padding: 0;
+  }
+
+  .sh {
+    filter: drop-shadow(20px 10px 10px rgb(67, 12, 75));
+  }
+
+  .bg-clear {
+    background-color: whitesmoke;
   }
