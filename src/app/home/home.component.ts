@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
-import { QuemSomosComponent } from '../quem-somos/quem-somos.component';
+import { Component, OnInit } from '@angular/core';
+
+declare var FB: any;
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   constructor() { }
 
-
-
+  ngOnInit() {
+    if (FB != null && FB.XFBML != null)
+      FB.XFBML.parse();
+  }
 }
